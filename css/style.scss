@@ -1,0 +1,120 @@
+// SASS master race
+
+// variables
+$custom-black: #212529;
+$custom-grey-dark: #343a40;
+$custom-grey: #6c757d;
+$custom-white: #f8f9fa;
+
+// mixins
+@mixin underline {
+    text-decoration: none;
+    color: $custom-black;
+    text-decoration: underline;
+}
+
+@mixin bold {
+    text-decoration: none;
+    font-weight: bold;
+    color: $custom-black;
+}
+
+@mixin bold-underline {
+    text-decoration: none;
+    font-weight: bold;
+    color: $custom-black;
+    text-decoration:underline;
+}
+
+/* General style */
+
+body {
+    background-color: $custom-grey;
+    hyphens: auto;
+}
+
+img {
+    max-height:700px;
+}
+
+/* Nav-tab style */
+
+.nav-tabs>li>a {
+    &:hover {
+    border-color: $custom-grey !important;
+    }
+    &.active {
+        background-color: $custom-grey !important;
+        border-color: $custom-grey  !important;
+        border-bottom-color: transparent !important;
+        color: $custom-white !important;
+    }
+}
+
+.dropdown-menu {
+    background-color: $custom-black !important;
+    border-color: $custom-black  !important;
+    li {
+        a {
+            color: $custom-white !important;
+            &:hover {
+                color: $custom-grey-dark !important;
+            }
+            &:active {
+                background-color: $custom-white !important;
+            }
+        }
+    }
+}
+
+.dropdown>a {
+    color: $custom-white !important;
+}
+
+/* Image position styles */
+
+.image-right {
+    float: right;    
+    display: block;
+}
+
+.image-left {
+    float: left;
+    display: block;
+}
+
+/* Link style */
+
+.link-style {
+    @include underline; 
+    &:hover {
+        @include bold-underline;
+    }
+}
+
+.link-style-second {
+    @include bold;
+    &:hover {
+        @include bold-underline;
+    }
+}
+
+/* Accordion style */
+
+.accordion-button {
+    &[aria-expanded="true"] {
+        background-color: $custom-grey;
+        color: $custom-white;
+        box-shadow: none;
+        }  
+    &.collapsed {
+        background-color: $custom-black;
+        color: $custom-white;
+    }
+}
+
+/* Carousel style */
+
+.carousel-item>img {
+    max-height: 600px;
+}

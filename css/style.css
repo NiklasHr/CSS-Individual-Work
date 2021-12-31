@@ -1,0 +1,92 @@
+/* General style */
+body {
+  background-color: #6c757d;
+  hyphens: auto;
+}
+
+img {
+  max-height: 700px;
+}
+
+/* Nav-tab style */
+.nav-tabs > li > a:hover {
+  border-color: #6c757d !important;
+}
+.nav-tabs > li > a.active {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  border-bottom-color: transparent !important;
+  color: #f8f9fa !important;
+}
+
+.dropdown-menu {
+  background-color: #212529 !important;
+  border-color: #212529 !important;
+}
+.dropdown-menu li a {
+  color: #f8f9fa !important;
+}
+.dropdown-menu li a:hover {
+  color: #343a40 !important;
+}
+.dropdown-menu li a:active {
+  background-color: #f8f9fa !important;
+}
+
+.dropdown > a {
+  color: #f8f9fa !important;
+}
+
+/* Image position styles */
+.image-right {
+  float: right;
+  display: block;
+}
+
+.image-left {
+  float: left;
+  display: block;
+}
+
+/* Link style */
+.link-style {
+  text-decoration: none;
+  color: #212529;
+  text-decoration: underline;
+}
+.link-style:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #212529;
+  text-decoration: underline;
+}
+
+.link-style-second {
+  text-decoration: none;
+  font-weight: bold;
+  color: #212529;
+}
+.link-style-second:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #212529;
+  text-decoration: underline;
+}
+
+/* Accordion style */
+.accordion-button[aria-expanded=true] {
+  background-color: #6c757d;
+  color: #f8f9fa;
+  box-shadow: none;
+}
+.accordion-button.collapsed {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+/* Carousel style */
+.carousel-item > img {
+  max-height: 600px;
+}
+
+/*# sourceMappingURL=style.css.map */
